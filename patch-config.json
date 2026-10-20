@@ -38,7 +38,7 @@
     },
     {
       "app_name": "proton-vpn",
-      "source": "Hoo"
+      "source": "hexreborn"
     },
     {
       "app_name": "threads",
@@ -51,10 +51,6 @@
     {
       "app_name": "telegram",
       "source": "hushtelegram"
-    },
-    {
-      "app_name": "trakt",
-      "source": "pixelpusher"
     },
     {
       "app_name": "solid",
