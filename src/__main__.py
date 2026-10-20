@@ -375,7 +375,22 @@ def run_build(app_name: str, source: str, arch: str = "universal") -> str:
         if not apksigner:
             raise RuntimeError("apksigner not found")
 
-        if app_name in ("tiktok", "twitter", "x-new"):
+        if app_name in (
+            "tiktok",
+            "twitter",
+            "x",
+            "x-new",
+            "instagram",
+            "reddit",
+            "duolingo",
+            "telegram",
+            "solid",
+            "pinterest",
+            "proton-vpn",
+            "messenger",
+            "discord",
+            "explore",
+        ):
             from src.play_updates import disable_play_store_updates
             disable_play_store_updates(output_apk)
             zipalign = shutil.which("zipalign") or str(Path(apksigner).with_name("zipalign"))
